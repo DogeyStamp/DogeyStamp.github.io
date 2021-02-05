@@ -19,6 +19,9 @@ h2 {
 a {
     font-size:60%;
 }
+div {
+    margin-top: -5%
+}
 button {
   background-color: #4CAF50; /* Green */
   border: none;
