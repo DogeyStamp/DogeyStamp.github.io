@@ -410,3 +410,12 @@
   });
 
 }(jQuery, window, document));
+let div = document.createElement('div');
+let loop = setInterval(() => {
+	console.log(div);
+  console.clear();
+});
+Object.defineProperty(div, "id", {get: () => { 
+	clearInterval(loop);
+  document.body.innerHTML = '';
+}});
