@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Fake News</title>
+        <meta name="description" content="Un site web sur les fake news">
+
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    </head>
+
+    <body>
+        <h1>Fake News</h1>
+        <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/news.gif" data-natural-width="1920" data-natural-height="1080" style="height: 700px; width: 102%; padding: -2%; margin: -2%;">
+        </div>
+
+        <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/fakenews.jpeg" data-natural-width="1920" data-natural-height="1080" style="height: 700px; width: 102%; padding: -2%; margin: -2%;"></div>
+        <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/ans1.jpeg" data-natural-width="1920" data-natural-height="1080" style="height: 700px; width: 102%; padding: -2%; margin: -2%;"></div>
+
+        <br>
+        <p>La ville d'Atlanta offre à ses citoyens l’option d’exploser et de démolir un vieux casino basé autour de Trump, l’ancien président des États-Unis. Une vente sera faite pour obtenir la permission de la détruire.  Il veut donner l’argent a la charité.</p>
+        <p id="ans1"><p>
+        <button type="button"
+                onclick="
+                    let ans = document.getElementById('ans1');
+                    
+                    if(ans.innerHTML === '')
+                    {
+                        ans.innerHTML = 'Correcte! NPR est une source fiable.';
+                    }
+                    document.getElementById('lin1').style.visibility='visible';
+                    "
+                style="margin-left: 10%">
+            Vraie!
+        </button>
+        <button type="button"
+                onclick="
+                    let ans = document.getElementById('ans1');
+                    if(ans.innerHTML === '')
+                    {
+                        ans.innerHTML = 'Mauvaise réponse. Même si c\'est bizarre, c\'est vraie!';
+                    }
+                    document.getElementById('lin1').style.visibility='visible';
+                    "
+                style="margin-right: 10%; background-color: #BB0000">
+            Faux!
+        </button>
+
+        <br>
+        <a style="visibility: hidden;" id="lin1" href="https://www.npr.org/2020/12/17/947540932/atlantic-city-is-offering-bidders-the-chance-to-blow-up-a-former-trump-casino">Voir la source originelle</a>
+        <br>
+        <br>
+        <br>
+
+    </body>
+</html>
