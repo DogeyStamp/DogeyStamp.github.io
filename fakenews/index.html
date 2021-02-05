@@ -17,6 +17,12 @@
         <h1>Fake News</h1>
         <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/news.gif" data-natural-width="1920" data-natural-height="1080" style="height: 700px; width: 102%; padding: -2%; margin: -2%;">
         </div>
+        <br>
+        <p>Les fake news sont des articles qui disent des mauvaises informations à leurs lecteurs.  Elles parlent souvent des théories de complot (conspiracy theory). Elles peuvent utiliser des vraies nouvelles et les changer pour mentir.</p>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/fakenews.jpeg" data-natural-width="1920" data-natural-height="1080" style="height: 700px; width: 102%; padding: -2%; margin: -2%;"></div>
         <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/ans1.jpeg" data-natural-width="1920" data-natural-height="1080" style="height: 700px; width: 102%; padding: -2%; margin: -2%;"></div>
@@ -56,6 +62,87 @@
         <br>
         <br>
         <br>
+        <br>
+        <br>
+        <br>
 
+        <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/ans3.jpg" data-natural-width="1920" data-natural-height="1080" style="height: 700px; width: 102%; padding: -2%; margin: -2%;"></div>
+
+        <br>
+        <br>
+        <br>
+        <p>Les panneaux solaires épuisent le Soleil et vont le tuer.</p>
+        <p>Source: Real News Right Now</p>
+        <p id="ans3"><p>
+        <button type="button"
+                onclick="
+                    let ans = document.getElementById('ans3');
+                    
+                    if(ans.innerHTML === '')
+                    {
+                        ans.innerHTML = 'Mauvaise réponse. Real News Right Now est un site de fake news.';
+                    }
+                    document.getElementById('lin3').style.visibility='visible';
+                    "
+                style="margin-left: 10%">
+            Vraie!
+        </button>
+        <button type="button"
+                onclick="
+                    let ans = document.getElementById('ans3');
+                    if(ans.innerHTML === '')
+                    {
+                        ans.innerHTML = 'Correcte! Les informations sont faux et la source n\'est pas fiable, comparé au site de NASA, ou The Guardian, par exemple.';
+                    }
+                    document.getElementById('lin3').style.visibility='visible';
+                    "
+                style="margin-right: 10%; background-color: #BB0000">
+            Fausse!
+        </button>
+
+        <br>
+        <a style="visibility: hidden;" id="lin3" href="http://realnewsrightnow.com/2015/12/nasa-solar-energy-consumption-accelerating-effects-of-global-warming/">Voir la source originelle</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/ans2.jpg" data-natural-width="1920" data-natural-height="1080" style="height: 700px; width: 102%; padding: -2%; margin: -2%;"></div>
+
+        <br>
+        <br>
+        <br>
+        <p>On a trouvé une nouvelle espèce de caméléon au Madagascar qui est petit comme un ongle. Les scientifiques disent qu'il va disparaître.</p>
+        <p>Source: National Geographic</p>
+        <p id="ans2"><p>
+        <button type="button"
+                onclick="
+                    let ans = document.getElementById('ans2');
+                    
+                    if(ans.innerHTML === '')
+                    {
+                        ans.innerHTML = 'Correcte! National Geographic fait des articles sur la nature depuis longtemps et c\'est une source fiable.';
+                    }
+                    document.getElementById('lin2').style.visibility='visible';
+                    "
+                style="margin-left: 10%">
+            Vraie!
+        </button>
+        <button type="button"
+                onclick="
+                    let ans = document.getElementById('ans2');
+                    if(ans.innerHTML === '')
+                    {
+                        ans.innerHTML = 'Mauvaise réponse. National Geographic est une source fiable qui fait des articles sur la nature.';
+                    }
+                    document.getElementById('lin2').style.visibility='visible';
+                    "
+                style="margin-right: 10%; background-color: #BB0000">
+            Fausse!
+        </button>
+
+        <br>
+        <a style="visibility: hidden;" id="lin2" href="https://www.nationalgeographic.com/animals/2021/01/tiny-chameleon-smallest-reptile-discovered-madagascar/">Voir la source originelle</a>
     </body>
 </html>
