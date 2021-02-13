@@ -8,20 +8,23 @@ p {
 }
 h1 {
     font-size: 400%;
-    padding: 100px;
     text-align: center;
 }
 h2 {
     font-size: 200%;
     text-align: center;
-    padding: 100px;
+}
+h4 {
+    text-align: center;
 }
 a {
     font-size:60%;
+    text-align: center;
 }
 div {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
+
 button {
   background-color: #4CAF50; /* Green */
   border: none;
