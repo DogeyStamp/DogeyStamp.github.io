@@ -21,7 +21,7 @@
         <p>Les fake news sont des articles qui disent des mauvaises informations à leurs lecteurs.  Elles parlent souvent des théories de complot (conspiracy theory). Elles peuvent utiliser des vraies nouvelles et les changer pour mentir.</p>
         <h4>Comment les trouver?</h4>
         <p>Si l'auteur ou l'organisation est connue et ils connaissent le sujet de l'article, c'est plus fiable et probablement pas du fake news.</p>
-        <p>Mais s'il y a des fautes d'orthographe ou les preuves sont personelles, c'est probablement pas fiable.</p>
+        <p>Mais s'il y a des fautes d'orthographe ou les preuves sont personelles, ce n'est probablement pas fiable.</p>
         <h2> Quiz </h2>
         <p>Ces articles sont ils vrais ou faux?</p>
 
@@ -35,24 +35,30 @@
             <button type="button"
                     onclick="
                         let ans = document.getElementById('ans1');
+                        document.getElementById('lin1').style.visibility='visible';
                         
                         if(ans.style.visibility === 'hidden')
                         {
                             ans.innerHTML = 'Correcte! NPR est une source fiable.';
                             ans.style.visibility='visible';
+                            let pc = document.getElementById('pointsCounter');
+                            pc.innerHTML=Number(pc.innerHTML)+100;
+                            let  ac = document.getElementById('ansCounter');
+                            ac.innerHTML=Number(ac.innerHTML)+1;
                         }
-                        document.getElementById('lin1').style.visibility='visible';
                     ">
                 Vraie!
             </button>
             <button type="button"
                     onclick="
                         let ans = document.getElementById('ans1');
+                        document.getElementById('lin1').style.visibility='visible';
                         if(ans.style.visibility === 'hidden')
                         {
                             ans.style.visibility='visible';
+                            let  ac = document.getElementById('ansCounter');
+                            ac.innerHTML=Number(ac.innerHTML)+1;
                         }
-                        document.getElementById('lin1').style.visibility='visible';
                         "
                     style="background-color: #BB0000">
                 Fausse!
@@ -71,24 +77,30 @@
             <button type="button"
                     onclick="
                         let ans = document.getElementById('ans3');
+                        document.getElementById('lin3').style.visibility='visible';
                         
                         if(ans.style.visibility === 'hidden')
                         {
                             ans.style.visibility = 'visible';
+                            let  ac = document.getElementById('ansCounter');
+                            ac.innerHTML=Number(ac.innerHTML)+1;
                         }
-                        document.getElementById('lin3').style.visibility='visible';
                     ">
                 Vraie!
             </button>
             <button type="button"
                     onclick="
                         let ans = document.getElementById('ans3');
+                        document.getElementById('lin3').style.visibility='visible';
                         if(ans.style.visibility === 'hidden')
                         {
                             ans.innerHTML = 'Correcte! Les informations sont faux et la source n\'est pas fiable, comparé au site de NASA, ou The Guardian, par exemple.';
                             ans.style.visibility = 'visible';
+                            let pc = document.getElementById('pointsCounter');
+                            pc.innerHTML=Number(pc.innerHTML)+100;
+                            let  ac = document.getElementById('ansCounter');
+                            ac.innerHTML=Number(ac.innerHTML)+1;
                         }
-                        document.getElementById('lin3').style.visibility='visible';
                         "
                     style="background-color: #BB0000">
                 Fausse!
@@ -106,13 +118,17 @@
             <button type="button"
                     onclick="
                         let ans = document.getElementById('ans2');
+                        document.getElementById('lin2').style.visibility='visible';
                         
                         if(ans.style.visibility === 'hidden')
                         {
                             ans.innerHTML = 'Correcte! National Geographic fait des articles sur la nature depuis longtemps et c\'est une source fiable.';
                             ans.style.visibility = 'visible';
+                            let pc = document.getElementById('pointsCounter');
+                            pc.innerHTML=Number(pc.innerHTML)+100;
+                            let  ac = document.getElementById('ansCounter');
+                            ac.innerHTML=Number(ac.innerHTML)+1;
                         }
-                        document.getElementById('lin2').style.visibility='visible';
                         "
                     >
                 Vraie!
@@ -120,12 +136,14 @@
             <button type="button"
                     onclick="
                         let ans = document.getElementById('ans2');
+                        document.getElementById('lin2').style.visibility='visible';
 
                         if(ans.style.visibility === 'hidden')
                         {
                             ans.style.visibility = 'visible';
+                            let  ac = document.getElementById('ansCounter');
+                            ac.innerHTML=Number(ac.innerHTML)+1;
                         }
-                        document.getElementById('lin2').style.visibility='visible';
                         "
                     style="background-color: #BB0000">
                 Fausse!
@@ -144,24 +162,31 @@
             <button type="button"
                     onclick="
                         let ans = document.getElementById('ans4');
+                        document.getElementById('lin4').style.visibility='visible';
                         
                         if(ans.style.visibility === 'hidden')
                         {
                             ans.style.visibility = 'visible';
+                            let  ac = document.getElementById('ansCounter');
+                            ac.innerHTML=Number(ac.innerHTML)+1;
                         }
-                        document.getElementById('lin4').style.visibility='visible';
                         ">
                 Vraie!
             </button>
             <button type="button"
                     onclick="
                         let ans = document.getElementById('ans4');
+                        document.getElementById('lin4').style.visibility='visible';
+
                         if(ans.style.visibility === 'hidden')
                         {
                             ans.innerHTML = 'Correcte! La source n\'est pas connue et pas fiable. De plus, le titre est mal écrit ce qui veut dire que l\'article est de mauvaise qualité.';
                             ans.style.visibility = 'visible';
+                            let pc = document.getElementById('pointsCounter');
+                            pc.innerHTML=Number(pc.innerHTML)+100;
+                            let  ac = document.getElementById('ansCounter');
+                            ac.innerHTML=Number(ac.innerHTML)+1;
                         }
-                        document.getElementById('lin4').style.visibility='visible';
                         "
                     style="background-color: #BB0000">
                 Fausse!
@@ -179,29 +204,58 @@
                     onclick="
                         let ans = document.getElementById('ans5');
                         
+                        document.getElementById('lin5').style.visibility='visible';
                         if(ans.style.visibility === 'hidden')
                         {
                             ans.innerHTML = 'Correcte! Huffington Post est une source connue et fiable.';
                             ans.style.visibility = 'visible';
+                            let pc = document.getElementById('pointsCounter');
+                            pc.innerHTML=Number(pc.innerHTML)+100;
+                            let  ac = document.getElementById('ansCounter');
+                            ac.innerHTML=Number(ac.innerHTML)+1;
                         }
-                        document.getElementById('lin5').style.visibility='visible';
                         ">
                 Vraie!
             </button>
             <button type="button"
                     onclick="
                         let ans = document.getElementById('ans5');
+                        document.getElementById('lin5').style.visibility='visible';
                         if(ans.style.visibility === 'hidden')
                         {
                             ans.style.visibility = 'visible';
+                            let  ac = document.getElementById('ansCounter');
+                            ac.innerHTML=Number(ac.innerHTML)+1;
                         }
-                        document.getElementById('lin5').style.visibility='visible';
                         "
                     style="background-color: #BB0000">
                 Fausse!
             </button>
             <br>
             <a style="visibility: hidden;" id="lin5" href="https://www.huffingtonpost.ca/entry/subway-tuna-salad-lawsuit_ca_601465b6c5b6aa4bad33e957">Voir la source originelle</a>
+        </div>
+        <div id="points" style="visibility: hidden">
+            <script>
+                function sleep(ms) {
+                    return new Promise(resolve => setTimeout(resolve, ms));
+                }
+                async function update()
+                {
+                    while(true)
+                    {
+                        await sleep(500);
+                        if(Number(document.getElementById('ansCounter').innerHTML) >= 5)
+                        {
+                            document.getElementById('points').style.visibility='visible';
+                        }
+                    }
+                }
+                update();
+            </script>
+            <h2>Points</h2>
+            <p id="ansCounter" style="visibility: hidden">0</p>
+            <p>Bravo!</t>
+            <h4 id="pointsCounter">0</s4>
         </div>
     </body>
 </html>
